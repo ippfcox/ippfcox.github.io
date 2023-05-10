@@ -16,7 +16,9 @@
       <description>创建博客的过程
 在自己的github创建两个仓库，一个是ippfcox.github.io，用于github pages，另一个是blog，用于保存博客源码，这个仓库设置为私有了 git@github.com:ippfcox/ippfcox.github.io.git git@github.com:ippfcox/blog.git 创建网站 hugo new site blog 创建一个blog目录，并初始化
 配置远端地址 cd blog git init git remote add origin git@github.com:ippfcox/blog.git 配置远端地址为刚刚初始化的仓库，配置了这个才能通过git submodule配置主题
-配置主题，我使用PaperMod git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod echo &amp;#34;theme = &amp;#39;PaperMod&amp;#39;&amp;#34; &amp;gt;&amp;gt; config.toml 此时可以预览 hugo server 配置.gitignore，修改默认分支，推送一个版本 .hugo_build.lock .vscode git add * git branch -m master main git push origin main 创建一篇文档 hugo new posts/基于Hugo和Github-Pages创建静态博客.md 注意修改draft为false，修改config中的url和名称等</description>
+配置主题，我使用PaperMod git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod echo &amp;#34;theme = &amp;#39;PaperMod&amp;#39;&amp;#34; &amp;gt;&amp;gt; config.toml 此时可以预览 hugo server 配置.gitignore，修改默认分支，推送一个版本 .hugo_build.lock .vscode git add * git commit -m &amp;#34;initial commit&amp;#34; git branch -m master main git push origin main 创建一篇文档 hugo new posts/基于Hugo和Github-Pages创建静态博客.md 注意修改draft为false，修改config中的url和名称等
+发布 hugo 生成静态文件到public中，在public目录初始化git仓库并添加远端地址
+cd public git init git remote add origin git@github.</description>
     </item>
     
   </channel>
